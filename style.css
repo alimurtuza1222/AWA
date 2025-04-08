@@ -133,4 +133,16 @@
     background: #888;
     border-radius: 4px;
   }
+  .company-info {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .info-box p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
   
