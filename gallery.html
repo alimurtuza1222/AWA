@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Collage Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+      padding: 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .image-card {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .image-card:hover img {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 16px;
+      }
+
+      .image-card {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="AWAtechnoverse Logo" class="logo-img" />
+      <span class="logo-text">Allied With Amaze Technoverse PVT. LTD.</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html" >Home</a>
+      <a href="about.html">About</a>
+      <a href="Expertise.html">Expertise</a>
+      <a href="Services.html">Services</a>
+      <a href="gallery.html"class="active">Gallery</a>
+      <a href="projects.html">Projects</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="about-hero">
+    <h1>Our Work in Action</h1>
+    <p>From innovation to implementation — a showcase of our proudest projects and collaborations.</p>
+  </section>
+
+
+  <div class="gallery-container">
+    <!-- Replace with actual images -->
+    <div class="image-card"><img src="images/img1.jpeg" alt="Image 1"loading="lazy"></div>
+    <div class="image-card"><img src="images/img2.jpeg" alt="Image 2"loading="lazy"></div>
+    <div class="image-card"><img src="images/img3.jpeg" alt="Image 3"loading="lazy"></div>
+    <div class="image-card"><img src="images/img4.jpeg" alt="Image 4"loading="lazy"></div>
+    <div class="image-card"><img src="images/img5.jpeg" alt="Image 5"loading="lazy"></div>
+    <div class="image-card"><img src="images/img6.jpeg" alt="Image 6"loading="lazy"></div>
+    <div class="image-card"><img src="images/img7.jpeg" alt="Image 7"loading="lazy"></div>
+    <div class="image-card"><img src="images/img8.jpeg" alt="Image 8"loading="lazy"></div>
+    <div class="image-card"><img src="images/img9.jpeg" alt="Image 9"loading="lazy"></div>
+    <div class="image-card"><img src="images/img10.jpeg" alt="Image 10"loading="lazy"></div>
+    <div class="image-card"><img src="images/img11.jpeg" alt="Image 11"loading="lazy"></div>
+    <div class="image-card"><img src="images/img12.jpeg" alt="Image 12"loading="lazy"></div>
+    <div class="image-card"><img src="images/img13.jpeg" alt="Image 13"loading="lazy"></div>
+    <div class="image-card"><img src="images/img14.jpeg" alt="Image 14"loading="lazy"></div>
+    <div class="image-card"><img src="images/img15.jpeg" alt="Image 15"loading="lazy"></div>
+    
+  </div>
+  <footer class="footer">
+    <p>© 2023 Allied With Amaze Technoverse Pvt. Ltd. | CIN: U73100MH2022PTC387908 | GSTIN: 27AAXCA4259K1ZX</p>
+  </footer>
+</body>
+</html>
